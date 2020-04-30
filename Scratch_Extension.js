@@ -11,7 +11,7 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-          ['b','enter key pressed?','key enter pressed?']
+          ['enter','enter key pressed?','key enter pressed?']
         ]
     };
     // Register the extension
