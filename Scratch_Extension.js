@@ -8,12 +8,12 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.loud = function() {
+    ext.when = function() {
    };
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['b','loud?','loud']
+            ['h','when %b','when']
         ]
     };
 
