@@ -11,10 +11,12 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-          ['enter','enter key pressed?','key enter pressed?']
+            ['b','loud?','loud']
         ]
     };
+
     // Register the extension
     ScratchExtensions.register('Extension', descriptor, ext);
 })({});
+
 // Ths is in case our code gets wiped.
