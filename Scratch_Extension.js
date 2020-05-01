@@ -8,6 +8,8 @@
         return {status: 2, msg: 'Ready'};
     };
 
+    ext.loud = function() {
+   };
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
