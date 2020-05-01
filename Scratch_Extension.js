@@ -9,7 +9,8 @@
     };
 
     ext.when = function() {
-   };
+
+    };
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
