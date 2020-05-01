@@ -1,32 +1,19 @@
-class Extention {
-    getInfo() {
-        return {
-            "id": "Extention",
-            "name": "Extention",
-            "blocks": [{
-                    "opcode": "substringy",
-                    "blockType": "reporter",
-                    "text": "letters [num1] through [num2] of [string]",
-                    "arguments": {
-                        "num1": {
-                            "type": "number",
-                            "defaultValue": "2"
-                        },
-                        "num2": {
-                            "type": "number",
-                            "defaultValue": "5"
-                        },
-                        "string": {
-                            "type": "string",
-                            "defaultValue": "hello world"
-                        }
-                    }
-                },
-            }],
-        "menus": { //we will get back to this in a later tutorial
-        }
+(function(ext) {
+    // Cleanup function when the extension is unloaded
+    ext._shutdown = function() {};
+
+    // Status reporting code
+    // Use this to report missing hardware, plugin or unsupported browser
+    ext._getStatus = function() {
+        return {status: 2, msg: ‘Ready’};
     };
-    substringy({num1, num2, string}) {
-        return string.substring(num1 - 1, num2);
+
+    // Block and block menu descriptions
+    var descriptor = {
+        blocks: [
+        ['b','loud?','loud']  
+        ]
     };
-}
+    // Register the extension
+    ScratchExtensions.register('Extension', descriptor, ext);
+})({});
