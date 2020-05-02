@@ -8,8 +8,8 @@
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.when = function() {
-
+    ext.when = function(input) {
+        if (input) return true;
     };
     // Block and block menu descriptions
     var descriptor = {
