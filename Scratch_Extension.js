@@ -9,7 +9,7 @@
     };
 
     ext.when = function(input) {
-        if (input) return true;
+        return input;
     };
     // Block and block menu descriptions
     var descriptor = {
