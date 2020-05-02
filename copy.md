@@ -8,16 +8,20 @@
         return {status: 2, msg: 'Ready'};
     };
 
+    ext.when = function(input) {
+        return input;
+    };
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['b','loud?','loud']
+            ['h','when %b','when']
         ]
     };
 
     // Register the extension
     ScratchExtensions.register('Extension', descriptor, ext);
 })({});
+
 
 
 // Ths is in case our code gets wiped.
