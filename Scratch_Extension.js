@@ -11,10 +11,31 @@
     ext.when = function(input) {
         return input;
     };
+    
+    ext.alert = function(text) {
+        alert(text);
+    };
+    
+    ext.confirm = function(text) {
+        return confirm(text);
+    };
+    
+    ext.prompt = function(text) {
+        var output = prompt(text);
+        if (!output) {
+            return '';
+        } else {
+            return output;
+        };
+    };
+    
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['h','when %b','when']
+            ['h','when %b','when'],
+            [' ','alert %s','alert'],
+            ['b','confirm %s','confirm'],
+            ['r','prompt %s','prompt'],
         ]
     };
 
