@@ -40,5 +40,5 @@
     };
 
     // Register the extension
-    ScratchExtensions.register('Extension', descriptor, ext);
+    ScratchExtensions.register('More Blocks', descriptor, ext);
 })({});
