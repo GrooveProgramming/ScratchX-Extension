@@ -29,6 +29,11 @@
         };
     };
     
+    ext.log = function(text) {
+    console.log(text);
+    };
+
+    
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
@@ -36,6 +41,7 @@
             [' ','alert %s','alert'],
             ['b','confirm %s','confirm'],
             ['r','prompt %s','prompt'],
+            [' ','console.log %s','log'],
         ]
     };
 
